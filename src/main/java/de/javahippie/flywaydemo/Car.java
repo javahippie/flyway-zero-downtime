@@ -38,6 +38,9 @@ public class Car {
     
     @Column(name = "build_date")
     private LocalDateTime buildDate;
+    
+    @Column(name = "hp")
+    private int hp;
 
     public Long getId() {
         return id;
@@ -78,5 +81,15 @@ public class Car {
     public void setBuildDate(LocalDateTime buildDate) {
         this.buildDate = buildDate;
     }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+    
+    
     
 }
